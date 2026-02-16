@@ -1,0 +1,16 @@
+{
+  "name": "Simple FPS Viewer",
+  "description": "Display FPS on any webpage",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
